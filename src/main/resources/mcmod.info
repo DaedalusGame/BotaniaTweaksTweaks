@@ -1,0 +1,16 @@
+[
+{
+  "modid": "botaniatweakstweaks",
+  "name": "Botania Tweaks Tweaks",
+  "description": "As long as the decay timer is an integer.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["BordListian"],
+  "credits": "quaternary gang",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
