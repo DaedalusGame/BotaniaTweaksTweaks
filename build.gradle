@@ -7,15 +7,17 @@ buildscript {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
+        maven { url = "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'com.wynprice.cursemaven:CurseMaven:1.2.3'
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'com.wynprice.cursemaven'
 
-
-version = "0.1"
+version = "0.2"
 group= "botaniatweakstweaks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Botania Tweaks Tweaks"
 
@@ -43,6 +45,8 @@ repositories {
 }
 
 dependencies {
+    deobfCompile curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/botania/files/2846950")
+
     compile files('libs/')
 }
 
